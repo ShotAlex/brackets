@@ -34,32 +34,8 @@ module.exports = function check(str, bracketsConfig) {
                 c.pop();
             }
         }
-
     }
-    
+
     if (c.length > 0) return false;
     return true;
 }
-    
-
-
-
-    
-
-    // if (str.length % 2 !== 0 || !str.length) return false;
-    // let c = [];
-
-    // for (let i = 0; i < str.length; i++) {
-    //     if ( str[i] == '(' || str[i] == '{' || str[i] == '[') {
-    //         c.push(str[i]);
-            
-    //     } else if (str[i] == ')' || str[i] == '}' || str[i] == ']') {
-    //         if (c.length == 0) return false;
-            
-    //         if (c[c.length-1] == '(' && str[i] == ')' || c[c.length-1] == '{' && str[i] == '}' || c[c.length-1] == '[' && str[i] == ']') c.pop();
-            
-    //     }
-
-    // }
-
-    // return true;
